@@ -1,0 +1,129 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.container {
+    width: 700px;
+    height: 570px;
+    border: 2px solid black;
+    background-color: black;
+    color: white;
+}
+.row {
+    width: 100%;
+    height: 50%;
+
+    /* border: 2px solid green; */
+}
+.againRow {
+    display: flex;
+    justify-content: space-between;
+    
+}
+.againRow button{
+    padding: 6px 10px;
+    margin: 10px;
+}
+.againRow p {
+    padding: 10px;
+
+}
+.guessNumber{
+    text-align: center;
+    padding: 10px;
+}
+#questionMark {
+    /* background-color: gray; */
+    background-color: black;
+    color: white;
+    border: 2px solid white;
+    font-size: 2rem;
+    padding: 15px 30px;
+    position: absolute;
+    top: 42%;
+    left: 50%;
+}
+.row2 {
+    display: flex;
+    border-top: 4px solid white;
+}
+.col {
+    width: 50%;
+    height: 100%;
+    color: white;
+    background-color: black;
+    /* background-color: aquamarine; */
+}
+.col1{
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+}
+.col1 button, input {
+    width: 50%;
+    margin: 10px;
+    height: 60px;
+}
+.col2 {
+    width: 50%;
+    display: flex;
+    /* margin: 20px; */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.col2 div p {
+    background-color: black;
+   margin: 20px;
+   font-size: 2rem;
+   color: white;
+}
+@media  screen and (max-width: 520px) {
+    .col2 div p {
+        background-color: black;
+       margin: 20px;
+       font-size: 1.5rem;
+       color: white;
+    }
+    #questionMark {
+        /* background-color: gray; */
+        background-color: black;
+        color: white;
+        top: 50%;
+        left: 50%;
+    }
+    .container{
+        background-color: black;
+    }
+}
+
+
+
+
+@media  screen and (max-width: 272px) {
+    .col2 div p {
+        background-color: black;
+       margin: 20px;
+       font-size: 1rem;
+       color: white;
+    }
+    #questionMark {
+        /* background-color: gray; */
+        background-color: black;
+        color: white;
+        top: 50%;
+        left: 50%;
+        padding: 5px 10px;
+    }
+    .container{
+        background-color: black;
+    }
+}
